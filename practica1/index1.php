@@ -7,6 +7,8 @@
 </head>
 
 <body>
+
+    <!-- PRÀCTICA 1 -->
     <?php
         $nom = "Kurt";
         $cognom = "Cagle";
@@ -28,10 +30,39 @@
         <li>Va néixer l'any: <b><?php echo $data->format('Y-m-d') ?></b></li>
         <li>Els seus telèfons són: <?php echo $telefon[0] ?> - <?php echo $telefon[1] ?></li>
         <li>Viu a: <?php echo $adreçaPostal ?></li>
-        <li>El seu email és: <?php echo $correu ?></li>
+        <li>El seu email1 és: <?php echo $correu ?></li>
         <li>Treballa: <?php echo $treballa ? "Si" : "No" ?></li>
         <li>I medeix: <?php echo $alçada ?></li>
     </ul>
+
+
+    <!-- PRÀCTICA 2 -->
+
+    <?php
+        define("IVA", 0.21); 
+
+        $cursos = array (
+           // array("ID", "NOM", "DESC", "PREU").
+            array(1, "PHP", "Introducció a PHP", 15.5),
+            array(2, "Laravel", "Laravel per experts", 30),
+            array(3, "Django", "Dominant Django", 10)
+        );
+
+        $numCursos = count($cursos);
+    ?>
+    <h1>Llista de cursos</h1>
+    <h2>Número de cursos apuntats: <?php echo $numCursos ?> </h2>
+    <?php
+        for ($i = 0; $i <= $numCursos; $i ++) {
+            for ($a = 0; $a <= $numCursos; $a++) {
+                echo "<p>".$cursos[$i][$a]."</p>";
+            }
+        }
+    ?>
+        
+
+    
+    
     
 </body>
 
