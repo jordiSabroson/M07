@@ -14,6 +14,11 @@
 
 Cada un dels atributs serà un variable on es guardarà la informació de la persona que posteriorment s’haurà de mostrar com una llista en HTML, tal i com es mostra a la següent captura de pantalla:   
 
+**2. PRÀCTICA 2 - Persona i Llista cursos en PHP**
+
 Enllaç al manual PHP:  
 `https://www.php.net/manual/es/index.php`
+
+Resultat de la pràctica: 
+![Alt text](pràctica2PHP.png)
 
